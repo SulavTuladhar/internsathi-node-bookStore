@@ -33,7 +33,7 @@ app.use(function(err,req,res,next){
     })
 })
 
-app.listen(PORT, function(err,connected){
+app.listen(process.env.PORT || PORT, function(err,connected){
     if(err){
         console.log('Sever listening failed', err);
     }else{
